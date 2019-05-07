@@ -1,0 +1,10 @@
+---
+- name: crapy_playbook
+  hosts: all
+  vars: 
+    - vsphere_user: OLD
+  tasks:
+    - debug:
+        msg: "vsphere user name: {{vsphere_user}}"
+    
+    - command: "cp file.x file.y"
